@@ -12,6 +12,7 @@ Initial checkout of HBM power analyzer measuring electrical power between the ut
 <img src="images/pendulum_mechanical.jpg?raw=true"/>
 
 - Motor
+	- M5
 	- Akribis ADR220-B175-S-K-NH-3.0-FB-RA-26B-P25-Z75
 	- Renishaw resolute absolute encoder BissC: RA26BBA115B30A
 - Torque Sensor
@@ -19,3 +20,6 @@ Initial checkout of HBM power analyzer measuring electrical power between the ut
 - Pendulum
 	- Mass 
 	- COM
+
+### 3. Electrical Measurement
+
