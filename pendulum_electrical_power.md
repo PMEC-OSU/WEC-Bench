@@ -21,7 +21,16 @@ Initial checkout of HBM power analyzer measuring electrical power between the ut
 	- Mass 9.40 Kg
 	- COM 0.628 m from rotation point
 
-### 3. Electrical Measurement
+### 3. Electrical measurement overview
 
+- Power Analyzer
+	- HBK Genesis GEN4tB
 <img src="images/powerAnalyzer.jpg?raw=true"/>
+
+- Current Transducers
+	- Input power 208 VAC three phase
+<img src="images/inputPower_CTs.jpg?raw=true"/>
+	- Drive to motor
+<img src="images/driveMotor_CTs.jpg?raw=true"/>
+
 
