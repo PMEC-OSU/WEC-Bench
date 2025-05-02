@@ -18,8 +18,8 @@ Initial checkout of HBM power analyzer measuring electrical power between the ut
 - Torque Sensor
 	- FUTEK TRS300 FSH1989
 - Pendulum
-	- Mass 
-	- COM
+	- Mass 9.40 Kg
+	- COM 0.628 m from rotation point
 
 ### 3. Electrical Measurement
 
