@@ -23,3 +23,5 @@ Initial checkout of HBM power analyzer measuring electrical power between the ut
 
 ### 3. Electrical Measurement
 
+<img src="images/powerAnalyzer.jpg?raw=true"/>
+
