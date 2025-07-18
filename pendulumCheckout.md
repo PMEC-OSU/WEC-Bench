@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pendulum Checkout
-description: This is just another page
+description: Initial checkout of HBK power analzyer with pendulum
 ---
 
 [back](./)
