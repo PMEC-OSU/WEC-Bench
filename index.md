@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-# Summary 
+# WEC-Bench
 
 
 
