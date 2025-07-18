@@ -1,12 +1,5 @@
-title: WEC-Bench # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  WEC-Bench is a resource for characterizing Wave Energy Converter motors at laboratory and small scale Powering the Blue Economy (PBE) scales.
-  <br><br>
-  If you have an interest in utilizing this resource, please check out the <a href="https://teamer-us.org/">TEAMER</a> program.
-  <br><br>
-  
-remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme
-#google_analytics: UA-000000-0 # your Google Analytics tracking ID here
+title: WEC-Bench
+description: WEC-Bench is a resource for characterizing Wave Energy Converter motors at laboratory and small scale Powering the Blue Economy (PBE) scales. 
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-cayman

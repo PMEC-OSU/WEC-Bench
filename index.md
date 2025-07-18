@@ -1,10 +1,16 @@
-## WEC-Bench
-
+---
+layout: default
 ---
 
-### Summary 
 
-[Pendulum Electrical Power](/WEC-Bench/pendulum_electrical_power)
+# Summary 
+
+
+
+
+## Pendulum Checkout
 <img src="images/Pendulum_thumbnail.jpg?raw=true"/>
+
 #### This test is designed for the initial checkout of the HBM power analyzer
 ---
+
