@@ -5,6 +5,9 @@ layout: default
 
 # WEC-Bench
 
+## [Dyno Checkout](./dynoCheckout.html)
+
+#### This test is designed for the initial checkout of the HBM power analyzer
 
 
 
