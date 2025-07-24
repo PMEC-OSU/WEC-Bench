@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdb:motordb schemaVersion="1" xmlns:mdb="http://www.a-m-c.com/motordb">
+  <MotorManufacturer Name="Akribis">
+    <MotorModel Name="ADR220-B235-S-K">
+      <MotorType d4p1:type="mdb:PermanentMagnetBrushless" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <Inertia>0</Inertia>
+        <Brake>On</Brake>
+        <MaxSpeed>190</MaxSpeed>
+        <MaxTemp>100</MaxTemp>
+        <PeakCurrent>9.8999996185302734</PeakCurrent>
+        <Poles>12</Poles>
+        <ContinuousCurrent>3.2999999523162842</ContinuousCurrent>
+        <Resistance>10.32</Resistance>
+        <Inductance>106.7</Inductance>
+        <Ke>2020</Ke>
+        <Kt>3342.0416108524041</Kt>
+      </MotorType>
+      <FeedbackType d4p1:type="mdb:BiSS-C" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <Polarity>Standard</Polarity>
+        <Resolution>23</Resolution>
+        <NumberOfTurns>1</NumberOfTurns>
+        <SingleTurnData>23</SingleTurnData>
+        <SingleTurnDataJustification>Right</SingleTurnDataJustification>
+        <MultiTurnData>0</MultiTurnData>
+        <MultiTurnDataJustification>Right</MultiTurnDataJustification>
+        <DataWidth>0</DataWidth>
+        <VelocityDivider>256</VelocityDivider>
+      </FeedbackType>
+    </MotorModel>
+  </MotorManufacturer>
+</mdb:motordb>
