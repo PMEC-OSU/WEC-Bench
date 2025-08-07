@@ -3,3 +3,4 @@ description: WEC-Bench is a resource for testing Wave Energy Converter motors at
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
+use_directory_urls: false
