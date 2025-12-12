@@ -11,8 +11,8 @@ Internal_Shunt_Inductance=0
 Max_Shunt_Freq=5
 Internal_Shunt_Max_Cont_Current=15
 Shunt_Configuration=2
-Controlboard=CAU314SED
-Powerboard=PLA40A40B
+Controlboard=CAU314SEF
+Powerboard=PLA40A40C
 
 [Drive Parameters Section]
 Drive_Control=1
@@ -70,7 +70,7 @@ Motor_Page_Velocity_Distance_And_Time=513
 Motor_Page_Distance=9
 Stored_User_Units_Version_id=0
 Stored_User_Units_Data_Crc_Value=60438
-nominal_bus_voltage=325
+nominal_bus_voltage=150
 configurator_value=0
 Motor_Commutation_Value=4
 Analog_Output_Signal=0
@@ -94,11 +94,11 @@ Emulated_Encoder_Index_Period_User=0
 Gain_Config_Switch_State_Word=0
 Digital_Absolute_Encoder_Manufacturer=Renishaw
 Selected_Network_Protocol=2
-Stored_Setup_Software_Data_Crc_Value=63276
+Stored_Setup_Software_Data_Crc_Value=12426
 Drive_Name=DPEANIU-040A400
-Firmware_Name=DPEANIU.BISS-7.4.0.9.aff
+Firmware_Name=DPEANIUX2.BISS-7.6.0.0.aff
 Stored_User_Parameters_Version_Id=0
-Stored_User_Parameters_Data_Crc_Value=41563
+Stored_User_Parameters_Data_Crc_Value=35996
 
 [Motor Parameters Section]
 Motor_Manufacturer=Akribis
@@ -232,7 +232,7 @@ Aux_Encoder_Index_Minus_Selection_Four=0
 Resolver_Cycles_Per_Rev=1
 Resolver_Multi_Speed=0
 Stored_Motor_2_Parameters_Version_Id=0
-Stored_Motor_2_Parameters_Data_Crc_Value=15987
+Stored_Motor_2_Parameters_Data_Crc_Value=65195
 Encoder_Wiring_Polarity=1
 Maximum_Phase_Detection_Current=0
 Maximum_Phase_Detection_Time_Limit=1000
@@ -545,7 +545,7 @@ Torque_At_Command_Window=0.399169921875
 
 [Velocity Section]
 Feedback_Direction=3
-Feedback_Filter_Coefficient=0.030927573330700397491
+Feedback_Filter_Coefficient=0.030927573330684507424
 Proportional_Gain=0.006072998046875
 Integral_Gain=1.1990778148174285889e-07
 Derivative_Gain=0
@@ -866,11 +866,11 @@ S_Config1=0
 ;******************************************;
 [Powerboard Section]
 Data_Structure_ID=4
-Name=PLA40A40B
-Version=0.02
-Serial_Number=81424-1044
-Build_Date=06/03/19
-Build_Time=13:22:29
+Name=PLA40A40C
+Version=0.04
+Serial_Number=96565-1019
+Build_Date=05/13/25
+Build_Time=07:28:53
 R_B_V=30
 B_U_V=545
 B_O_V=3939
@@ -910,21 +910,21 @@ D_C_F_C=5000
 R_C_F_C=50000
 
 [Controlboard Section]
-Hardware_ID=310
-Name=CAU314SED
-Version=0.02
-Serial_Number=82749-1050
-build_Date=11/12/19
-Build_Time=09:01:25
+Hardware_ID=410
+Name=CAU314SEF
+Version=0.03
+Serial_Number=96402-1014
+build_Date=05/17/25
+Build_Time=06:21:28
 N_D_I=11
 N_D_O=7
 N_A_I=2
 N_A_O=0
-Product Name=DPEANIU-040A400A
-Product Version=0.03
-Product Serial Number=83097-1001
-Product Build Date=11/23/19
-Product Build Time=07:25:07
+Product Name=DPEANIU-040A400F
+Product Version=0.06
+Product Serial Number=97182-1001
+Product Build Date=06/07/25
+Product Build Time=07:19:42
 File Storage Area Size=8192
 Motion Engine Script Storage Area Size=8192
 Gain Scheduling Table Storage Area Size=8192
@@ -1060,10 +1060,10 @@ Ctn_Data=00000000000000000000000000000000000000000000000000000000000000000000000
 ;**********************************;
 
 [Firmware]
-Bootloader=Bootloader_E 7.2.0
-FPGA=ctu314se_310_Image 1.1.0
-Main=Cpu314de 7.4.0.9
-MicroBlaze=uB_ECAT_001 1.2.28
+Bootloader=Bootloader_EL 7.2.1
+FPGA=CAU314SE_410_Image 1.1.9
+Main=Cpu314de 7.6.0.0
+MicroBlaze=uB_ECAT_002 1.2.31
 Motion Engine Version=256
 Motion Engine Program Page Size=1024
 
@@ -1074,13 +1074,13 @@ Cyclic_Period_Mantissa=1
 Cyclic_Period_Exponent=-3
 
 [CanOpen Pdo Mapping]
-RPDO_1_Sub_Index_0=5
+RPDO_1_Sub_Index_0=6
 RPDO_1_Object_1=1614807056
 RPDO_1_Object_2=1618608160
 RPDO_1_Object_3=1627324448
 RPDO_1_Object_4=1618018320
 RPDO_1_Object_5=536937232
-RPDO_1_Object_6=0
+RPDO_1_Object_6=1616904208
 RPDO_1_Object_7=0
 RPDO_1_Object_8=0
 RPDO_1_Object_9=0
