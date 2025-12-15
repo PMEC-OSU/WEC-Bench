@@ -232,7 +232,7 @@ Aux_Encoder_Index_Minus_Selection_Four=0
 Resolver_Cycles_Per_Rev=1
 Resolver_Multi_Speed=0
 Stored_Motor_2_Parameters_Version_Id=0
-Stored_Motor_2_Parameters_Data_Crc_Value=65195
+Stored_Motor_2_Parameters_Data_Crc_Value=15987
 Encoder_Wiring_Polarity=1
 Maximum_Phase_Detection_Current=0
 Maximum_Phase_Detection_Time_Limit=1000
@@ -501,8 +501,8 @@ External_Shunt_Power=100
 External_Shunt_Inductance=0
 
 [Current Section]
-Torque_Loop_Proportional_Gain=27.529296875
-Torque_Loop_Integral_Gain=0.150390625
+Torque_Loop_Proportional_Gain=29.78125
+Torque_Loop_Integral_Gain=0.1640625
 Torque_Target_Offset=0
 Peak_Current_Limit=16.1962890625
 Peak_Current_Hold_Time=2000
@@ -524,7 +524,7 @@ H_S_Angle1=0
 H_S_Angle2=0
 Index_S_Angle1=0
 Index_S_Angle2=0
-N_T_A_At_E_Z_P=18628
+N_T_A_At_E_Z_P=18616
 Max_S_P_A_Error=3641
 Max_S_P_A_Adj=182
 E_Cycle_Adj_Count=3
@@ -811,18 +811,18 @@ Response_Time_External_Quick_Stop=0
 Response_Time_Pwm_And_Direction_Broken_Wire=0
 
 [Scope Data Section]
-Trace_Mode=10
-Trigger_Selector=28
+Trace_Mode=0
+Trigger_Selector=0
 Trigger_Threshold=0
 Trigger_Count=0
-Post_Trigger_Count=49
+Post_Trigger_Count=0
 Initial_Skip_count=0
-Skip_Count=199
-Buffer_Size=400
-Parameter_1_Selector=28
-Parameter_2_Selector=29
-Parameter_3_Selector=26
-Parameter_4_Selector=27
+Skip_Count=0
+Buffer_Size=800
+Parameter_1_Selector=0
+Parameter_2_Selector=0
+Parameter_3_Selector=0
+Parameter_4_Selector=0
 Parameter_5_Selector=0
 Parameter_6_Selector=0
 Parameter_7_Selector=0
@@ -1049,7 +1049,7 @@ DX_DAC_Bank_4_Consumed_Hardware_Outputs=0
 ;* BEGIN INTERNAL USE ONLY SECTIONS - DO NOT EDIT *;
 ;**************************************************;
 [Additional Data]
-Ctn_Data=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000003f555500ff000000ffffffffffffffff000000000000000000000000ffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000002440000000000000244000000000000024400000000000002440000000000000000000000000000000000000000000001440000000000000000001000000e3ff0000dcff00000000000000
+Ctn_Data=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000002f555500ff000000ffffffffffffffff000000000000000000000000ffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000002440000000000000244000000000000024400000000000002440000000000000000000000000000000000000000000001440000000000000000001000000e3ff0000dcff00000000000000
 
 ;**********************************;
 ;* END INTERNAL USE ONLY SECTIONS *;

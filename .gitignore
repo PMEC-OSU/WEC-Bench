@@ -1,1 +1,15 @@
 .vs/
+Simulink/*.c
+Simulink/*.mexw64
+Simlulink/*.tlc
+Simulink/*.cpp
+Simulink/*.asv
+Simulink/*.mldatx
+Simulink/*.mat
+Simulink/*.pdb
+Simulink/*.slxc
+Simulink/*.log
+Simulink/utils/*.mat
+Simulink/utils/*.asv
+Simulink/slprj
+Simulink/rtwmakecfg.mat
