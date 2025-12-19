@@ -39,17 +39,17 @@ pos_rad = pos_rad .* r_win;
 
 
 elems(1) = Simulink.BusElement;
-elems(1).Name = 'pos_rad';
+elems(1).Name = 'exp_pos_rad';
 elems(2) = Simulink.BusElement;
-elems(2).Name = 'damping_Npermpers';
+elems(2).Name = 'exp_damping_Npermpers';
 elems(3) = Simulink.BusElement;
-elems(3).Name = 'stiffness_Nperm';
+elems(3).Name = 'exp_stiffness_Nperm';
 refSigs = Simulink.Bus;
 refSigs.Elements = elems;
 
-st.pos_rad = timeseries(pos_rad,t);
-st.damping_Npermpers = timeseries(damping_Npermpers,t);
-st.stiffness_Nperm = timeseries(stiffness_Nperm,t);
+st.exp_pos_rad = timeseries(pos_rad,t);
+st.exp_damping_Npermpers = timeseries(damping_Npermpers,t);
+st.exp_stiffness_Nperm = timeseries(stiffness_Nperm,t);
 
 ds = Simulink.SimulationData.Dataset;
 ds = ds.add(st,'refSigs');

@@ -13,3 +13,4 @@ Simulink/utils/*.mat
 Simulink/utils/*.asv
 Simulink/slprj
 Simulink/rtwmakecfg.mat
+Simulink/*.original
