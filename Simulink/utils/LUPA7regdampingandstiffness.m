@@ -55,11 +55,6 @@ ds = Simulink.SimulationData.Dataset;
 ds = ds.add(st,'refSigs');
 save('refSigs.mat','refSigs','ds')
 
-
-
-
-
-
 figure
 yyaxis left
 plot(t,pos_rad)
@@ -73,5 +68,10 @@ legend('shaft','damping','stiffness')
 
 grid on
 
-
+figure
+plot(output.time,output.ELMO.pow_W)
+ylabel('Mechanical Power (W)')
+title('Experimental Mechanical Power')
+xlabel('time (s)')
+grid on
 
