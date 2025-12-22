@@ -6,7 +6,7 @@ sprocketPitchRadius = 0.0636651;
 share = 'Z:';
 year = '2025';
 project = 'LUPA7';
-experiment = '20250402_Regular';
+experiment = '20250401_Regular';
 trial = 'Trial01';
 
 %% load data
