@@ -1,6 +1,11 @@
 %% WEC-Bench initialization script 
 clear; clc; close all;
 addpath(genpath('utils'));
+addpath(genpath('ExcelGains'));
+
+numPeriods = 10;
+wavePeriod = 2.5;
+GainTstep = numPeriods*wavePeriod;
 
 %% Assign constants
 Ts = 0.001;
@@ -10,8 +15,14 @@ DUTKt = 8.51; % +/-10% from motor datasheet
 sprocketPitchRadius = 0.0636651; % sprocket teeth 50 from datasheet
 rampTime = 20;
 tgName = 'performance4';
+excelFile = 'Damping_20251222.xlsx';
 
 load('refSigs.mat')
+ExcelGains = readtable(excelFile);
+ExcelGains = table2array(ExcelGains);
+ExcelLength = length(ExcelGains);
+Damping = ExcelGains(:,2);
+Stiffness = ExcelGains(:,1);
 
 appName = 'WECBenchApp.mlapp';
 buildDir = fullfile('C:','simulink_code');

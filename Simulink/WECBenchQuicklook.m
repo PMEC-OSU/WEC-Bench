@@ -6,7 +6,7 @@ figure("Name",'Bus Voltages (V)')
 plot(output.time,output.driveSignals.DClink_drv_V)
 hold on
 plot(output.time,output.DUTsignals.busVoltage_V)
-plot(output.time,output.DUTsensors.DUTbusVoltage_V)
+% plot(output.time,output.DUTsensors.DUTbusVoltage_V)
 legend('drive bus','DUT reported bus','sensor bus')
 title('Bus Voltages')
 xlabel('time (s)')
