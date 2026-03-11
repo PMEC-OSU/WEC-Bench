@@ -4,7 +4,7 @@ addpath(genpath('utils'));
 addpath(genpath('ExcelGains'));
 
 numPeriods = 10;
-wavePeriod = 2.5;
+wavePeriod = 6.00;
 GainTstep = numPeriods*wavePeriod;
 
 %% Assign constants
@@ -15,7 +15,7 @@ DUTKt = 8.51; % +/-10% from motor datasheet
 sprocketPitchRadius = 0.0636651; % sprocket teeth 50 from datasheet
 rampTime = 20;
 tgName = 'performance4';
-excelFile = 'Damping_20251222.xlsx';
+excelFile = 'Damping_20260309.xlsx';
 
 load('refSigs.mat')
 ExcelGains = readtable(excelFile);
@@ -32,10 +32,13 @@ appDecimationAxes = 100;  % reduce info for real time plots
 
 mdlInfo = Simulink.MDLInfo(mdlName);
 mdlVersion = mdlInfo.ModelVersion;
+disp('*** Open Simulink Model ***')
+open_system(mdlName);
+
 set_param(mdlName,'LoadExternalInput','on');
 load_system(mdlName);
 
-eniPath = fullfile(pwd,'EtherCAT/DriveAndDUTXML.xml');
+eniPath = fullfile(pwd,'EtherCAT/DriveAndDUTAndPAXML.xml');
 set_param([mdlName,'/EtherCAT Init/EtherCAT Init'],'config_file',eniPath);
 set_param(mdlName, 'RTWVerbose','off');
 

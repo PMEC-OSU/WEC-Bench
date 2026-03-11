@@ -5,7 +5,8 @@
 %% === parameters =========================================================
 mdlName = bdroot;
 modelWorkspace = get_param(mdlName,'ModelWorkspace');
-tgName = app.tgNameLabel.Text;
+% tgName = app.tgNameLabel.Text;
+tgName = 'performance4';
 
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
@@ -19,8 +20,8 @@ if(~exist('app','var'))
     % mdlName = 'LUPA';
     tgName = 'performance4';
     projectName = 'WECBench';
-    expname = 'SineDamping';
-    trialNumber = 4;
+    expname = 'CapacitorCharge4';
+    trialNumber = 8;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     app = [];
 else
@@ -59,15 +60,17 @@ temp = output.timestamp.UTCtime;
 temp.TimeZone = 'America/Los_Angeles';
 output.timestamp.LocalTime = temp;
 if(~isempty(app))
-    % output.reference.Amplitude = app.AmplitudeSpinner.Value;
-    % output.reference.Signal = app.SignalDropDown.Value;
-    % output.reference.CurrentLimit = app.CurrentLimitSpinner.Value;
-    % output.reference.SinePeriod = app.SinePeriodEditField.Value;
-    % output.control.Source = app.SourceDropDown.Value;
-    % output.feedback.Damping = app.DampingSpinner.Value;
-    % output.feedback.Stiffness = app.StiffnessSpinner.Value;
-    % output.feedback.time = 0:app.TsEditField.Value:length(output.feedback.vel_filt_radpers)*app.TsEditField.Value-app.TsEditField.Value;
-    % output.control.CurrentLimit = app.CurrentLimitSpinner.Value;
+    output.driveStatus.mode = app.ModeDropDown.Value;
+    output.driveStatus.sineAmp_deg = app.SineAmpdegEditField.Value;
+    output.driveStatus.sinePer_s = app.SinePeriodsecEditField.Value;
+    output.DUTstatus.mode = app.CtrlModeDropDown.Value;
+    output.DUTstatus.torqueLimit_Nm = app.TorqueLimitSpinner.Value;
+    output.DUTstatus.control = app.ControlDropDown.Value;
+    output.DUTstatus.sineAmp_Nm = app.SineAmpNmEditField.Value;
+    output.DUTstatus.sinePer_s = app.SinePeriodsecEditField.Value;
+    output.DUTstatus.damping = app.dampingSpinner.Value;
+    output.DUTstatus.stiffness = app.stiffnessSpinner.Value;
+
     output.trialData.Project = app.ProjectEditField.Value;
     output.trialData.Experiment = app.ExperimentEditField.Value;
     output.trialData.TrialNumber = app.TrialSpinner.Value;
@@ -109,8 +112,8 @@ if(strcmp(app.HWRLShareSwitch.Value,'Yes'))
             disp([projectName,': cannot find ',fullfile(sharename,'projects',year)])
         elseif ~exist(fullfile(sharename,'projects',year,projectName),'dir') % give up if no project folder
             disp([projectName,': cannot find ',fullfile(sharename,'projects',year,projectName)])
-        elseif ~exist(fullfile(sharename,'projects',year,projectName,'data','raw'),'dir') % give up if no raw folder
-            disp([projectName,': cannot find ',fullfile(projectName,'data','raw')])
+        elseif ~exist(fullfile(sharename,'projects',year,projectName,'data','onboard'),'dir') % give up if no raw folder
+            disp([projectName,': cannot find ',fullfile(projectName,'data','onboard')])
         else % we found the raw folder and can proceed
             expdirname = fullfile(sharename,'projects',year,projectName,'data','onboard',expname);
             if ~exist(expdirname,'dir') % create a experiment data directory if it doesn't exist yet
