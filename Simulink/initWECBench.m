@@ -38,7 +38,7 @@ open_system(mdlName);
 set_param(mdlName,'LoadExternalInput','on');
 load_system(mdlName);
 
-eniPath = fullfile(pwd,'EtherCAT/DriveAndDUTAndPAXML.xml');
+eniPath = fullfile(pwd,'EtherCAT/DriveAndDUTAndPAAndLoadXML.xml');
 set_param([mdlName,'/EtherCAT Init/EtherCAT Init'],'config_file',eniPath);
 set_param(mdlName, 'RTWVerbose','off');
 
