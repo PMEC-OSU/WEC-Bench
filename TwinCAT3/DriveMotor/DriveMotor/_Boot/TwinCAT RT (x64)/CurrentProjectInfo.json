@@ -1,0 +1,1 @@
+{"project":{"name":"DriveMotor","platform":"TwinCAT RT (x64)","created":"2026-11-19T14:21:10"},"components":[{"name":"TcIo","type":1},{"name":"TcIoECat","type":1},{"name":"TcIoEth","type":1},{"name":"TcRTime","type":1},{"name":"TcRtsObjects","type":1}],"references":[]}

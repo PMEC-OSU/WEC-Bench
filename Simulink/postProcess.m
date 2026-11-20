@@ -6,7 +6,7 @@
 mdlName = bdroot;
 modelWorkspace = get_param(mdlName,'ModelWorkspace');
 % tgName = app.tgNameLabel.Text;
-tgName = 'performance4';
+tgName = 'performance3';
 
 dateDir = datestr(now,'yyyymmdd');
 timeDir = datestr(now,'HHMMss');
@@ -18,7 +18,7 @@ if(~exist('app','var'))
     %% if running this script manually change these values!!!!!
     buildDir = fullfile('C:','simulink_build');
     % mdlName = 'LUPA';
-    tgName = 'performance4';
+    tgName = 'performance3';
     projectName = 'WECBench';
     expname = 'CapacitorCharge4';
     trialNumber = 8;

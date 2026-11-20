@@ -13,11 +13,11 @@ CL = 13; % This needs to be set in EASII software and is limited by the drive cu
 driveKt = 23.6; % +/-10% from motor datasheet
 DUTKt = 8.51; % +/-10% from motor datasheet
 sprocketPitchRadius = 0.0636651; % sprocket teeth 50 from datasheet
-rampTime = 20;
-tgName = 'performance4';
+rampTime = 5;
+tgName = 'performance3';
 excelFile = 'Damping_20260309.xlsx';
 
-load('refSigs.mat')
+% load('refSigs.mat')
 ExcelGains = readtable(excelFile);
 ExcelGains = table2array(ExcelGains);
 ExcelLength = length(ExcelGains);
@@ -35,10 +35,10 @@ mdlVersion = mdlInfo.ModelVersion;
 disp('*** Open Simulink Model ***')
 open_system(mdlName);
 
-set_param(mdlName,'LoadExternalInput','on');
+% set_param(mdlName,'LoadExternalInput','on');
 load_system(mdlName);
 
-eniPath = fullfile(pwd,'EtherCAT/DriveAndDUTAndPAAndLoadXML.xml');
+eniPath = fullfile(pwd,'EtherCAT/DriveMotorXML.xml');
 set_param([mdlName,'/EtherCAT Init/EtherCAT Init'],'config_file',eniPath);
 set_param(mdlName, 'RTWVerbose','off');
 
